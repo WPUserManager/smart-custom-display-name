@@ -1,0 +1,11 @@
+{
+  "type": "core",
+  "name": "Smart Custom Display Name",
+  "url": "https://wordpress.org/plugins/smart-custom-display-name/",
+  "build": "distignore",
+  "channels": { "wordpress_org": true, "edd": false },
+  "main_file": "smart-custom-display-name.php",
+  "version_checks": [
+    { "file": "loader.php", "pattern": "'version'\\s*=>\\s*'([^']+)'" }
+  ]
+}
