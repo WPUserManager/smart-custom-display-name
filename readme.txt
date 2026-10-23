@@ -1,6 +1,6 @@
 === Smart Custom Display Name ===
 Contributors: wpusermanager, petersplugins
-Tags: author, authors, user, users, name, display name, profile, user-profile, custom name, user name, author name, the_author, get_the_author, the_author_link, get_the_author_link, the_author_posts_link, wp_list_authors, classicpress
+Tags: display name, author name, user name, profile, author
 Requires at least: 4.0
 Tested up to: 7.1
 Stable tag: 5.0.4
