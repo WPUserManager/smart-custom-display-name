@@ -36,7 +36,7 @@ function pp_smart_custom_display_name() {
     'slug'      => basename( pathinfo( __FILE__, PATHINFO_DIRNAME ) ),
     'name'      => 'Smart Custom Display Name',
 	'shortname' => 'Smart Custom Display Name',
-    'version'   => '5.0.3'
+    'version'   => '5.0.4'
   ) );
     
 }

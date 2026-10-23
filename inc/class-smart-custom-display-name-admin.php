@@ -15,7 +15,7 @@ if ( ! defined( 'WPINC' ) ) {
  */
 if ( !class_exists( 'PP_Smart_Custom_Display_Name_Admin' ) ) {
   
-  class PP_Smart_Custom_Display_Name_Admin extends PPF09_Admin {
+  class PP_Smart_Custom_Display_Name_Admin extends WPUMPPF1_Admin {
 
     
     /**

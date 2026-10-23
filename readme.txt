@@ -1,9 +1,9 @@
 === Smart Custom Display Name ===
-Contributors: petersplugins
+Contributors: wpusermanager, petersplugins
 Tags: author, authors, user, users, name, display name, profile, user-profile, custom name, user name, author name, the_author, get_the_author, the_author_link, get_the_author_link, the_author_posts_link, wp_list_authors, classicpress
 Requires at least: 4.0
-Tested up to: 6.3
-Stable tag: 5.0.3
+Tested up to: 7.1
+Stable tag: 5.0.4
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -14,13 +14,9 @@ Allows you to change the value of "Display name publicly as" in user profiles to
 
 The Smart Custom Display Name Plugin allows you to set your Display Name to anything you like
 
-== Retired Plugin ==
+Originally created by Peter Raschendorfer, maintained by WP User Manager since October 2026.
 
-Development, maintenance and support of this plugin has been retired in october 2023. You can use this plugin as long as is works for you. 
-
-There will be no more updates and I won't answer any support questions. Thanks for your understanding.
-
-Feel free to fork this plugin.
+Questions or problems? Ask in the [support forum](https://wordpress.org/support/plugin/smart-custom-display-name/).
 
 == Usage ==
 
@@ -33,6 +29,13 @@ The "Display Name" is the name shown as post author - e.g. "posted by John Doe".
 * This plugin does not send any data to external servers
 
 == Changelog ==
+
+= 5.0.4 (2026-10-23) =
+* Maintained again, by WP User Manager
+* Fixed: a display name containing double quotes was cut short in the profile field, and lost when the profile was saved. The field is now built safely
+* Fixed: the settings screen could run on another plugin's copy of the shared framework, such as 404page's
+* Removed the retirement notice and dead help links
+* Tested up to WordPress 7.1
 
 = 5.0.3 (2024-04-17) URGENT BUGFIX =
 * Bugfix after Cleanup
@@ -71,6 +74,9 @@ The "Display Name" is the name shown as post author - e.g. "posted by John Doe".
 * Initial Release
 
 == Upgrade Notice ==
+
+= 5.0.4 =
+Builds the display name field safely: names with double quotes are no longer cut short. Recommended update.
 
 = 5.0.0 =
 * code rewritten, no functional changes

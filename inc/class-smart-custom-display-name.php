@@ -16,7 +16,7 @@ if ( ! defined( 'WPINC' ) ) {
  */
 if ( !class_exists( 'PP_Smart_Custom_Display_Name' ) ) { 
 
-  class PP_Smart_Custom_Display_Name extends PPF09_Plugin {
+  class PP_Smart_Custom_Display_Name extends WPUMPPF1_Plugin {
     
 	/**
      * Admin Class
@@ -69,7 +69,13 @@ if ( !class_exists( 'PP_Smart_Custom_Display_Name' ) ) {
     function display_name_customizer_js() {
       ?>
       <script type="text/javascript">
-        jQuery( document ).ready( function() { jQuery( '#display_name' ).parent().html( '<input type="text" name="display_name" id="display_name" value="' + jQuery( '#display_name' ).val() + '" class="regular-text" />' ); jQuery( '#first_name, #last_name, #nickname' ).unbind( 'blur' ); jQuery( 'label[for="display_name"]' ).html( jQuery( 'label[for="display_name"]' ).html() + '&nbsp;<a class="dashicons dashicons-editor-help" href="<?php echo admin_url( 'options-general.php?page=smartcustomdisplaynamesettings' ); ?>"></a>' ); });
+        jQuery( document ).ready( function() {
+          // since 5.0.4 the value is set with val(), so quotes or markup in a name stay plain text
+          var select = jQuery( '#display_name' );
+          select.replaceWith( jQuery( '<input type="text" name="display_name" id="display_name" class="regular-text" />' ).val( select.val() ) );
+          jQuery( '#first_name, #last_name, #nickname' ).off( 'blur' );
+          jQuery( 'label[for="display_name"]' ).append( '&nbsp;<a class="dashicons dashicons-editor-help" href="<?php echo esc_url( admin_url( 'options-general.php?page=smartcustomdisplaynamesettings' ) ); ?>"></a>' );
+        });
       </script>
       <?php
     }
