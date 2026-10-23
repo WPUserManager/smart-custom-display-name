@@ -9,9 +9,9 @@
  * Plugin Name: Smart Custom Display Name
  * Plugin URI: https://wordpress.org/plugins/smart-custom-display-name/
  * Description: Set users "Display Name" to any custom value
- * Version: 5.0.3
- * Author: Peter Raschendorfer
- * Author URI: https://profiles.wordpress.org/petersplugins/
+ * Version: 5.0.4
+ * Author: WP User Manager
+ * Author URI: https://wpusermanager.com
  * Text Domain: smart-custom-display-name
  * License: GPL2+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
